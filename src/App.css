@@ -11,7 +11,7 @@
   overflow: hidden;
   width: 80%;
   text-align: center;
-  height:470px;
+  height:520px;
   border:none;
 }
 .profile-card-3 .background-block {
@@ -103,9 +103,80 @@ text-decoration:none;
   background-position: center;
   background-repeat: no-repeat;
 }
+.head-text{
+text-align:center; 
+font-family: Arial Black; 
+font-weight: bold; 
+font-size: 30px; 
+color: #fff; 
+text-shadow: 0 1px 0 #ddd, 0 2px 0 #ccc, 0 3px 0 #bbb, 0 4px 0 #aaa, 0 5px 0 #acacac, 0 6px 1px rgba(0,0,0,0.1), 0 0 5px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.2), 0 5px 10px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.2), 0 20px 20px rgba(0,0,0,0.15);
+letter-spacing: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  animation: move linear 2000ms infinite;
+  z-index: 2
 
+}
 
+@keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 #e2bf36,
+        3px -3px 0 #e2bf36,
+        2px -2px 0 #e2bf36,
+        1px -1px 0 #e2bf36,
+        -4px 4px 0 #d0dedf,
+        -3px 3px 0 #d0dedf,
+        -2px 2px 0 #d0dedf,
+        -1px 1px 0 #d0dedf;
+    }
+    25% {
+      text-shadow:
+        -4px -4px 0 #d0dedf,
+        -3px -3px 0 #d0dedf,
+        -2px -2px 0 #d0dedf,
+        -1px -1px 0 #d0dedf,
+        4px 4px 0 #e2bf36,
+        3px 3px 0 #e2bf36,
+        2px 2px 0 #e2bf36,
+        1px 1px 0 #e2bf36;
+    }
+    50% {
+      text-shadow:
+        -4px 4px 0 #e2bf36,
+        -3px 3px 0 #e2bf36,
+        -2px 2px 0 #e2bf36,
+        -1px 1px 0 #e2bf36,
+        4px -4px 0 #d0dedf,
+        3px -3px 0 #d0dedf,
+        2px -2px 0 #d0dedf,
+        1px -1px 0 #d0dedf;
+    }
+    75% {
+      text-shadow:
+        4px 4px 0 #d0dedf,
+        3px 3px 0 #d0dedf,
+        2px 2px 0 #d0dedf,
+        1px 1px 0 #d0dedf,
+        -4px -4px 0 #ebd065,
+        -3px -3px 0 #e2bf36,
+        -2px -2px 0 #e2bf36,
+        -1px -1px 0 #e2bf36;
+    }
+    100% {
+      text-shadow:
+        4px -4px 0 #e2bf36,
+        3px -3px 0 #e2bf36,
+        2px -2px 0 #e2bf36,
+        1px -1px 0 #e2bf36,
+        -4px 4px 0 #d0dedf,
+        -3px 3px 0 #a2e5e9,
+        -2px 2px 0 #b0ced0,
+        -1px 1px 0 #91d8dc;
+    }
+  }
 
-
+  
 
 
