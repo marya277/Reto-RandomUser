@@ -1,8 +1,7 @@
 #root {
+  padding: 0;
   
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+
 }
 
 .profile-card-3 {
@@ -10,15 +9,15 @@
   position: relative;
   float: left;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
   text-align: center;
-  height:430px;
+  height:470px;
   border:none;
 }
 .profile-card-3 .background-block {
   float: left;
   width: 100%;
-  height: 200px;
+  height: 280px;
   overflow: hidden;
 }
 .profile-card-3 .background-block .background {
@@ -96,3 +95,17 @@ background-color:#232323;
 color:#fff;
 text-decoration:none;
 }
+.head {
+  
+  min-height: 100px;
+  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
