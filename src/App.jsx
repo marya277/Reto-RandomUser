@@ -1,5 +1,4 @@
 import "./App.css";
-
 import axios from "axios";
 
 import { useState, useEffect } from "react";
@@ -28,9 +27,9 @@ const AppUser = () => {
     <div className="container-fluid p-0">
       <Header/>
     
-    <div className="row container-fluid d-flex justify-content-center my-5 mx-auto">
+    <div className="row container-fluid my-5">
       {users.map((user) => (
-        <div key={user.id.value} className="  col sm -6 col-md-4 ">
+        <div key={user.id.value} className="col-sm-6 col-md-4 gy-5">
           <div className="card profile-card-3 my-5 mx-auto">
             <div className="background-block">
               <img
@@ -42,28 +41,26 @@ const AppUser = () => {
             <div className="profile-thumb-block">
               <img src={user.picture.medium} alt="img" className="profile mb-5" />
             </div>
-            <div className=" card-body card-content">
+            <div className=" card-body card-content mb-5">
               <p className="text-md">{user.name.first} {user.name.last}</p>
               <p className="text-sm">Género: {user.gender}</p>
-              <small><p className="text-sm"> Correo: {user.email}</p></small>
+              <small><p className="text-sm"> Telefono: {user.phone}</p></small>
 
               <p className="text-sm font-serif">País: {user.location.country}</p>
-              <div className="card-footer icon-block mb-5">
-                <a href="#"> <i className="fa fa-facebook"></i>
-                </a>
-                <a href="#"><i className="fa fa-twitter"></i>
-                </a>
-                <a href="#"><i className="fa fa-google-plus"></i>
-                </a>
+
+              <div className="icon-block mx-auto">
+                <a href="#"> <i className="fa fa-facebook"></i></a>
+                <a href="#"><i className="fa fa-twitter"></i></a>
+                <a href="#"><i className="fa fa-google-plus"></i></a> 
               </div>
 
             </div>
           </div>
         </div>
       ))}
-      <div className="my-3 d-grid col-2 mx-auto">
-        <button className="btn btn-outline-dark tex-md" onClick={usersFecht}>
-          Otro
+      <div className="d-grid gap-3 col-2 mx-auto">
+        <button className="btn btn-outline-dark userbtn text-md mb-3" onClick={usersFecht}>
+          Otro user
         </button>
       </div>
     </div>
